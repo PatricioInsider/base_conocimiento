@@ -605,21 +605,16 @@
     </df-messenger>
 
     <script>
-        function switchTab(index) {
-            // Remover active de todos los tabs
-            const tabs = document.querySelectorAll('.tab');
-            const contents = document.querySelectorAll('.tab-content');
-            
-            tabs.forEach(tab => tab.classList.remove('active'));
-            contents.forEach(content => content.classList.remove('active'));
-            
-            // Activar el tab seleccionado
-            tabs[index].classList.add('active');
-            contents[index].classList.add('active');
-            
-            // Scroll suave al inicio del contenido
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+        <!-- Chatbot Pro Script Start -->
+<script>
+  window.chatbotProConfig = {
+    widgetId: "new-bot",
+    theme: "dark",
+    position: "right"
+  };
+</script>
+<script src="https://cdn.chatbotpro.ai/widget/v1.js" async></script>
+<!-- Chatbot Pro Script End -->
     </script>
 </body>
 </html>
